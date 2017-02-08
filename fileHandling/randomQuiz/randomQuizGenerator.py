@@ -32,7 +32,7 @@ for randQuiz in range(1,36):
     for questionNum in range(50):
         quizFile.write("What is the capital of: " + states[questionNum] +"? \n")
         answer = capitals[states[questionNum]]
-        answerFile.write("1 " + answer)
+        answerFile.write(str(questionNum) + answer)
         answers = []
         answers.append(answer)
         wrongAnswers = list(capitals.values())
@@ -41,5 +41,5 @@ for randQuiz in range(1,36):
         answers.extend(wrongAnswers)
         index = 0
         for option in answers:
-            quizFile.write(chr(ord('A') + index) +") "+option + "\n")
+            quizFile.write(chr(ord('A') + index++) +") "+option + "\n")
     os.chdir('../')
