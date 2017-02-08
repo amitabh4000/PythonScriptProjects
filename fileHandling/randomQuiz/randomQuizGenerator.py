@@ -45,4 +45,6 @@ for randQuiz in range(1,36):
         for option in answers:
             quizFile.write("\t" + chr(ord('A') + index) +") "+option + "\n")
             index += 1
+    quizFile.close()
+    answerFile.close()
     os.chdir('../')
