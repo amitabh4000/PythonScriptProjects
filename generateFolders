@@ -1,0 +1,7 @@
+import os
+absolutePath = os.path.abspath('.')
+dirToMakePath = os.path.join(absolutePath , 'fileHandling')
+os.makedirs(dirToMakePath)
+os.chdir(dirToMakePath)
+directoryFile = open('randomQuizGenerator.py' ,'w')
+directoryFile.close()
