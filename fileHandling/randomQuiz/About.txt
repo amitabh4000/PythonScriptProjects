@@ -1,0 +1,8 @@
+This project creates a geography quiz about the capitals of the states in USA. 
+There will be 35 different sets for 35 students. The number of sets can be increased 
+as much as one may want. Running the file randomQuizGenerator.py will create 35 folders.
+Folders will be named as Quiz1,Quiz2,Quiz3 etc. Each folder will have 2 files:
+ a) Quiz.txt
+ b) Answer.txt
+Each Quiz.txt file will have 50 questions and 4 corresponding options. 3 wrong, 1 right.
+Answer.txt will have answer for that corresponding Quiz
